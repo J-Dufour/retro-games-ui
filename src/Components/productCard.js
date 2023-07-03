@@ -15,7 +15,7 @@ function ProductCard({data, onSeeMore, onOrder, isSummary}){
     }
     return (
         <>
-        <div className="container border border-dark border-1">
+        <div className="container border border-primary border-1">
             <div className="row p-4">
                 <div className="col-4 ">
                     <img className="img-fluid" src={data.img} alt="Product Image"></img>

@@ -33,21 +33,28 @@ function Results() {
             name: "Product 1",
             img: "images\\misc\\placeholder.png",
             price: 59.99,
-            description: "Description"
+            description: "This is product 1."
         },
         {
             id: 1,
             name: "Product 2",
             img: "images\\misc\\placeholder.png",
-            price: 59.99,
-            description: "Description"
+            price: 49.99,
+            description: "This is product 2!"
         },
         {
             id: 2,
             name: "Product 3",
             img: "images\\misc\\placeholder.png",
-            price: 59.99,
-            description: "Description"
+            price: 89.99,
+            description: "This is product 3?"
+        },
+        {
+            id: 3,
+            name: "Product 4",
+            img: "images\\misc\\placeholder.png",
+            price: 429.99,
+            description: "This is product 4,"
         }
     ])
 
@@ -103,7 +110,7 @@ function Results() {
             <Search filters={allFilters} add={addFilter} remove={removeFilter} isSummary={false} />
             <div id="results" className="container-fluid pt-4">
                 <h2 className="text-center">Results</h2>
-                <div className=" row row-cols-3 ">
+                <div className=" row row-cols-3 gy-3">
                     {
                         results.map((product) => (
                             <div key={product.id} className="col">

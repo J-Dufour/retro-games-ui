@@ -2,22 +2,22 @@ function About() {
     const appraisers = [
         {
             id:0,
-            name: "First Last",
+            name: "Katrina Hebert",
             img: "images\\headshots\\person1.jpg"
         },
         {
             id:1,
-            name: "First Last",
+            name: "Yannick Carlson",
             img: "images\\headshots\\person2.jpg"
         },
         {
             id:2,
-            name: "First Last",
+            name: "Cassandra MacMillan",
             img: "images\\headshots\\person3.jpg"
         },
         {
             id:3,
-            name: "First Last",
+            name: "Arnold Toews",
             img: "images\\headshots\\person4.jpg"
         }
         
@@ -26,22 +26,22 @@ function About() {
     const technicians = [
         {
             id:4,
-            name: "First Last",
+            name: "Jo-Anne Gregory",
             img: "images\\headshots\\person5.jpg"
         },
         {
             id:5,
-            name: "First Last",
+            name: "Derrick Poole",
             img: "images\\headshots\\person6.jpg"
         },
         {
             id:6,
-            name: "First Last",
+            name: "Bobby Martin",
             img: "images\\headshots\\person7.jpg"
         },
         {
             id:7,
-            name: "First Last",
+            name: "Austin Dufresne",
             img: "images\\headshots\\person8.jpg"
         }
     ]
@@ -53,15 +53,29 @@ function About() {
                 <div className="row">
                     <div className="col-4">
                         <div className="h4"><strong>Shipping Address</strong></div>
-                        <p>content</p>
+                        <p>[Address]</p>
                     </div>
                     <div className="col-4">
                         <div className="h4"><strong>Hours of Operation</strong></div>
-                        <p>content</p>
+                        <div className="row">
+                            <div className="col-6">
+                        <p><strong>Mon:</strong> XX:XX - XX:XX</p>
+                        <p><strong>Tue:</strong> XX:XX - XX:XX</p>
+                        <p><strong>Wed:</strong> XX:XX - XX:XX</p>
+                        <p><strong>Thu:</strong> XX:XX - XX:XX</p>
+                        </div>
+                        <div className="col-6">
+                        <p><strong>Fri:</strong> XX:XX - XX:XX</p>
+                        <p><strong>Sat:</strong> Closed</p>
+                        <p><strong>Sun:</strong> Closed</p>
+                        </div>
+                        </div>
                     </div>
                     <div className="col-4">
                         <div className="h4"><strong>Contact Information</strong></div>
-                        <p>content</p>
+                        <p><strong>Phone:</strong> (123) 456 7890</p>
+                        <p><strong>email:</strong> retrogames@example.com</p>
+                        <p><strong>P.O. Box:</strong> [address]</p>
                     </div>
                 </div>
             </div>
