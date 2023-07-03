@@ -109,7 +109,7 @@ function Results() {
             </> ) : (<>
             <Search filters={allFilters} add={addFilter} remove={removeFilter} isSummary={false} />
             <div id="results" className="container-fluid pt-4">
-                <h2 className="text-center">Results</h2>
+                <div className="h1 text-center text-primary"><strong>Results</strong></div>
                 <div className=" row row-cols-3 gy-3">
                     {
                         results.map((product) => (

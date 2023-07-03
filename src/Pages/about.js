@@ -79,7 +79,7 @@ function About() {
                     </div>
                 </div>
             </div>
-            <div className="display-4 text-center mt-6">Staff</div>
+            <div className="h1 text-center text-primary"><strong>Staff</strong></div>
             <div className="container text-center pt-4">
                 <div className="row">
                     <div className="col-6 border-end">
