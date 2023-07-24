@@ -35,8 +35,8 @@ function Appraisal() {
                             <input onChange={onUpload} className="form-control" type="file" id="formFileMultiple" multiple />
                         </div>
 
-                    <p className="mt-3 pb-0 mb-0 mt-5"><strong>Hours of Operation: [hours]</strong></p>
-                    <p className="pt-0 mt-0 pb-0 mb-1"><strong>Estimated Wait Time: [wait time]</strong></p>
+                    <p className="mt-3 pb-0 mb-0 mt-5"><strong>Hours of Operation: 10:00 - 17:30</strong></p>
+                    <p className="pt-0 mt-0 pb-0 mb-1"><strong>Estimated Wait Time: 0 seconds</strong></p>
                     <button onClick={toChatPage} type="button" className="btn btn-primary text-light">Chat Now!</button>
                 </div>
             </div>
