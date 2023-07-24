@@ -10,17 +10,17 @@ function Repair() {
         <div className="container pt-5">
             <div className="row text-center justify-content-center gx-5">
                 <div className="col-3">
-                    <img className="img-fluid w-75" src="images\misc\placeholder.png"></img>
+                    <img className="img-fluid w-75" src="images\repair\speed.png"></img>
                     <div className="h4"><strong>Speed</strong></div>
                     <p className="text-start">Our technicicans are among the fastest in the field.</p>
                 </div>
                 <div className="col-3">
-                    <img className="img-fluid w-75" src="images\misc\placeholder.png"></img>
+                    <img className="img-fluid w-75" src="images\repair\quality.png"></img>
                     <div className="h4"><strong>Quality</strong></div>
                     <p className="text-start">With over 60 years of cumulative experience, you can rest assured that your console is in safe hands.</p>
                 </div>
                 <div className="col-3">
-                    <img className="img-fluid w-75" src="images\misc\placeholder.png"></img>
+                    <img className="img-fluid w-75" src="images\repair\ease.png"></img>
                     <div className="h4"><strong>Ease</strong></div>
                     <p className="text-start">Just fill out a repair request and pack your item, we'll handle the rest.</p>
                 </div>

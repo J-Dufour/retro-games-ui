@@ -22,7 +22,7 @@ function Sell(){
                     <div className="h4">
                         <strong>Get it Appraised</strong>
                     </div>
-                    <img className="img-fluid w-75 pt-2" src="images\\misc\\placeholder.png"></img>
+                    <img className="img-fluid w-75 pt-2" src="images\sell\appraise.png"></img>
                     <p className=" pt-5">Talk to one of our dedicated appraisal staff to get an estimate for the value of your item!</p>
                     <button onClick={toAppraisalPage} type="button" className="btn btn-primary text-light">Get Appraisal</button>
                 </div>
@@ -30,7 +30,7 @@ function Sell(){
                     <div className="h4">
                         <strong>Pack it Up</strong>
                     </div>
-                    <img className="img-fluid w-75 pt-2" src="images\\misc\\placeholder.png"></img>
+                    <img className="img-fluid w-75 pt-2" src="images\sell\pack.png"></img>
                     <p className=" pt-5">Once you receive our proprietary box, follow our instructions to pack your item up safely.</p>
                     <button onClick={toPackingPage} type="button" className="btn btn-primary text-light">Get Packing Instructions</button>
                 </div>
@@ -38,7 +38,7 @@ function Sell(){
                     <div className="h4">
                         <strong>Ship It</strong>
                     </div>
-                    <img className="img-fluid w-75 pt-2" src="images\\misc\\placeholder.png"></img>
+                    <img className="img-fluid w-75 pt-2" src="images\sell\ship.png"></img>
                     <p className=" pt-5">Send us your item, and we'll send you our payment as soon as it arrives!</p>
                     <button onClick={toAboutPage} type="button" className="btn btn-primary text-light">Get Shipping Address</button>
                 </div>

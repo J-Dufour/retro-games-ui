@@ -1,14 +1,5 @@
 function ProductCard({data, onSeeMore, onOrder, isSummary}){
-    /*
-    data should be in the form:
-    {
-        name: "name",
-        img: "url",
-        price: "price",
 
-        
-    }
-    */
 
     const seeMoreClicked = () => {
         onSeeMore(data);

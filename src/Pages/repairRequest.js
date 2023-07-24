@@ -1,10 +1,28 @@
+import { useState } from "react";
+import InputField from "../Components/inputField";
 import OrderSummary from "../Components/orderSummary";
 import { useHistory } from "react-router-dom/cjs/react-router-dom";
+import { useLocation } from "react-router-dom/cjs/react-router-dom.min";
 function RepairRequest() {
+
     const history = useHistory();
+
+    const [valid, SetValid] = useState(true);
+
+    const [nameField, SetNameField] = useState("");
+    const [emailField, SetEmailField] = useState("");
+    const [addressField, SetAddressField] = useState("");
+    const [deviceField, SetDeviceField] = useState("");
+
     const toConfirmation = () => {
-        history.push("/RepairConfirm");
+        //ensure input is valid
+        if(nameField === "" || emailField === "" || addressField === "" || deviceField === ""){
+            SetValid(false);
+        }else{
+        history.push("/RepairConfirm", {email: emailField});
+        }
     }
+
     return (
         <>
             <div className="h1 text-center text-primary"><strong>Repair Request Form</strong></div>
@@ -13,20 +31,16 @@ function RepairRequest() {
                     <div className="col-4 border-end text-center">
                         <div className="h4"><strong>Form</strong></div>
                         <div className="d-flex flex-row my-1">
-                            <p className="me-3 h4"><strong>Name:</strong></p>
-                            <input className="flex-fill"></input>
+                            <InputField name={"Name: "} validRegex={RegExp(".+")} validationMsg={"Must be at least one character long"} SetInput={SetNameField}/>
                         </div>
                         <div className="d-flex flex-row my-1">
-                            <p className="me-3 h4"><strong>Email:</strong></p>
-                            <input className="flex-fill"></input>
+                        <InputField name={"Email: "} validRegex={RegExp("@.+\\..+")} validationMsg={"Must be at least one character long and contain an @ character followed by a domain."} SetInput={SetEmailField}/>
                         </div>
                         <div className="d-flex flex-row my-1 pb-4 border-bottom">
-                            <p className="me-3 h4"><strong>Address:</strong></p>
-                            <input className="flex-fill"></input>
+                        <InputField name={"Address: "} validRegex={RegExp(".+")} validationMsg={"Must be at least one character long"} SetInput={SetAddressField}/>
                         </div>
                         <div className="d-flex flex-row my-1 pb-4">
-                            <p className="me-3 h4"><strong>Device:</strong></p>
-                            <input className="flex-fill"></input>
+                        <InputField name={"Device: "} validRegex={RegExp(".+")} validationMsg={"Must be at least one character long"} SetInput={SetDeviceField}/>
                         </div>
                         <div className="my-1 pb-4">
                             <p className="me-3 h4 text-start"><strong>Please describe the issue:</strong></p>
@@ -39,6 +53,8 @@ function RepairRequest() {
                             name: "Repair",
                             price: 49.99
                         }]} note={"We will send a confirmation email after your order. A proprietary packing box will be sent to the address provided"} onConfirm={toConfirmation} />
+
+                        {!valid && (<p className="text-danger">Please ensure all fields are correctly filled in.</p>)}
                     </div>
                 </div>
             </div>
@@ -49,11 +65,13 @@ function RepairRequest() {
 }
 
 function RepairConfirm() {
+    const history = useHistory();
+
     return (
         <>
             <div className="vh-100 pt-5">
                 <div className="h1 text-center text-primary "><strong>Your Repair Request was sent!</strong></div>
-                <div className="h5 text-center ">A confirmation will be sent to you shortly.</div>
+                <div className="h5 text-center ">A confirmation will be sent to you shortly at {history.location.state.email} .</div>
             </div>
         </>
     )

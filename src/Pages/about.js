@@ -53,19 +53,19 @@ function About() {
                 <div className="row">
                     <div className="col-4">
                         <div className="h4"><strong>Shipping Address</strong></div>
-                        <p>[Address]</p>
+                        <p>75 Laurier Ave E, Ottawa, ON K1N 6N5</p>
                     </div>
                     <div className="col-4">
                         <div className="h4"><strong>Hours of Operation</strong></div>
                         <div className="row">
                             <div className="col-6">
-                        <p><strong>Mon:</strong> XX:XX - XX:XX</p>
-                        <p><strong>Tue:</strong> XX:XX - XX:XX</p>
-                        <p><strong>Wed:</strong> XX:XX - XX:XX</p>
-                        <p><strong>Thu:</strong> XX:XX - XX:XX</p>
+                        <p><strong>Mon:</strong> 10:00 - 17:30</p>
+                        <p><strong>Tue:</strong> 10:00 - 17:30</p>
+                        <p><strong>Wed:</strong> 10:00 - 17:30</p>
+                        <p><strong>Thu:</strong> 10:00 - 17:30</p>
                         </div>
                         <div className="col-6">
-                        <p><strong>Fri:</strong> XX:XX - XX:XX</p>
+                        <p><strong>Fri:</strong> 12:00 - 17:30</p>
                         <p><strong>Sat:</strong> Closed</p>
                         <p><strong>Sun:</strong> Closed</p>
                         </div>
@@ -75,7 +75,7 @@ function About() {
                         <div className="h4"><strong>Contact Information</strong></div>
                         <p><strong>Phone:</strong> (123) 456 7890</p>
                         <p><strong>email:</strong> retrogames@example.com</p>
-                        <p><strong>P.O. Box:</strong> [address]</p>
+                        <p><strong>P.O. Box:</strong>75 Laurier Ave E, Ottawa, ON K1N 6N5</p>
                     </div>
                 </div>
             </div>
